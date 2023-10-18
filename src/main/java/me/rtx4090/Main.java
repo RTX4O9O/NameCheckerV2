@@ -38,10 +38,10 @@ public class Main {
                 if (string.length() >= 3 && string.length() <= 16) {
                     boolean isNameAvailable = checkNameAvailability(string);
                     if (isNameAvailable) {
-                        System.out.println("[✅ ] " + string);
+                        System.out.println("[✅]  " + string);
                         availableIGN.add(string);
                     } else {
-                        System.out.println("[❌ ] "+ string);
+                        System.out.println("[❌]  "+ string);
                     }
                 }
             }
