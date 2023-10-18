@@ -47,10 +47,12 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        System.out.println("可用ign: ");
         for (String ign :availableIGN) {
-            System.out.println("可用ign: ");
             System.out.println(ign);
         }
+
     }
 
     private static boolean checkNameAvailability(String name) {
