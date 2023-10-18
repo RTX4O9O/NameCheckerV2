@@ -34,25 +34,25 @@ public class Main {
             String line;
             while ((line = reader.readLine()) != null) {
                 String string = line.trim();
-                if (string.length() >= 3 && string.length() <= 16) {
+                if (string.length() >= 3 && string.length() <= 16 && isValidString(string)) {
                     boolean isNameAvailable = checkNameAvailability(string);
                     if (isNameAvailable) {
-                        System.out.println("[✅]  " + string);
+                        System.out.println("[CHECK]  " + string);
                         availableIGN.add(string);
                     } else {
-                        System.out.println("[❌]  "+ string);
+                        System.out.println("[CROSS]  "+ string);
                     }
+                } else {
+                    System.out.println("[CROSS]  "+ string);
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        System.out.println("可用ign: ");
         for (String ign :availableIGN) {
+            System.out.println("可用ign: ");
             System.out.println(ign);
         }
-
     }
 
     private static boolean checkNameAvailability(String name) {
@@ -68,4 +68,10 @@ public class Main {
             return false;
         }
     }
+    public static boolean isValidString(String input) {
+        // Use a regular expression to match the input against the pattern
+        // The pattern "[a-zA-Z0-9_]*" matches strings containing only alphabets, numbers, and underscores
+        return input.matches("[a-zA-Z0-9_]*");
+    }
+
 }
