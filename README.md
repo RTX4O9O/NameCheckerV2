@@ -32,14 +32,14 @@ The program uses the Mojang API to check the availability of each word as a Mine
 ## Example
 
 ```
-[✅] word1
-[❌] word2
-[✅] word3
+[✅] ign1
+[❌] ign2
+[✅] ign3
 ...
 
 Available IGNs:
-word1
-word3
+ign1
+ign3
 ```
 
 ## Contributions
