@@ -1,5 +1,10 @@
 plugins {
     id 'java'
+    id 'application'
+}
+
+application {
+    mainClass = "package.to.Main"
 }
 
 group 'me.rtx4090'
@@ -16,4 +21,11 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'me.rtx4090.Main'
+        )
+    }
 }
