@@ -1,3 +1,4 @@
+# *Due To Some Issue, Please Use [The Old Project](https://github.com/RTX4O9O/name-checker) For Now*
 # NameCheckerV2
 
 This Java program allows you to check the availability of Minecraft In-Game Names (IGN) from a list of words in a text file.
@@ -11,19 +12,26 @@ This Java program allows you to check the availability of Minecraft In-Game Name
 
 ## Getting Started
 
-1. Clone this repository to your local machine.
+1. [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) version 17 or above is required to run
+the Discord Bot Online Tool.
 
-2. Open the project in your preferred Java development environment (e.g., IntelliJ IDEA, Eclipse).
+2. Go to Release page and download the `name-check.zip` from latest release 
 
-3. Run the `Main` class.
+3. Unzip `name-check.zip` then run the `run.bat` 
 
-4. You will be prompted to enter the file path for the list of words. Make sure the file contains one word per line.
+4. Key the file path of your word list into the cmd. (make sure the file contains one word per line like this)
+```txt
+ign1
+ign2
+ign3
+ign4
+```
 
 5. The program will start checking the availability of each word.
 
 6. The results will be displayed in the console, showing whether each word is available or not.
 
-7. The available IGNs will be listed separately.
+7. The available IGNs will be listed separately once process is over.
 
 ## How It Works
 
@@ -32,14 +40,14 @@ The program uses the Mojang API to check the availability of each word as a Mine
 ## Example
 
 ```
-[✅] ign1
-[❌] ign2
-[✅] ign3
+[CHECK]  word1
+[CROSS]  word2
+[CHECK]  word3
 ...
 
 Available IGNs:
-ign1
-ign3
+word1
+word3
 ```
 
 ## Contributions
