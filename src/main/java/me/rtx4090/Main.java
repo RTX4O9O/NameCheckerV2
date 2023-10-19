@@ -26,7 +26,7 @@ public class Main {
 
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("請輸入單字列表檔案的路徑：");
+        System.out.print("Paste The Wordlist.txt Path Here: ");
         String filePath = scanner.nextLine();
         ArrayList<String> availableIGN = new ArrayList<>();
 
@@ -50,7 +50,7 @@ public class Main {
             e.printStackTrace();
         }
         for (String ign :availableIGN) {
-            System.out.println("可用ign: ");
+            System.out.println("Available IGNs: ");
             System.out.println(ign);
         }
     }
