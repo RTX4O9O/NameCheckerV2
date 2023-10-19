@@ -14,7 +14,7 @@ This Java program allows you to check the availability of Minecraft In-Game Name
 1. [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) version 17 or above is required to run
 the Discord Bot Online Tool.
 
-2. Go to Release page and download the `name-check.zip` from latest release 
+2. Go to [Release Page](https://github.com/RTX4O9O/NameCheckerV2/releases) and download the `name-check.zip` from latest release 
 
 3. Unzip `name-check.zip` then run the `run.bat` 
 
