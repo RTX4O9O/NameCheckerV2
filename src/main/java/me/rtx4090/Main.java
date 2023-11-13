@@ -69,8 +69,6 @@ public class Main {
         }
     }
     public static boolean isValidString(String input) {
-        // Use a regular expression to match the input against the pattern
-        // The pattern "[a-zA-Z0-9_]*" matches strings containing only alphabets, numbers, and underscores
         return input.matches("[a-zA-Z0-9_]*");
     }
 
